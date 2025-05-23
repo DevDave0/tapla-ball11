@@ -6,15 +6,35 @@ const roster = [
     //Holy Shot
     {name: "David Chung", PPG: 2, teamName: "Holy Shot"},
     {name: "James Lee", PPG: 6, teamName: "Holy Shot"},
+    {name: "Person Kim", PPG: 12, teamName: "Holy Shot"},
+    {name: "Person Kim", PPG: 7, teamName: "Holy Shot"},
+    {name: "Person Kim", PPG: 20, teamName: "Holy Shot"},
+    {name: "Person Kim", PPG: 1, teamName: "Holy Shot"},
+    {name: "Person Kim", PPG: 2, teamName: "Holy Shot"},
+    {name: "Person Kim", PPG: 3, teamName: "Holy Shot"},
+    {name: "Person Kim", PPG: 0, teamName: "Holy Shot"},
+    {name: "Person Kim", PPG: 9, teamName: "Holy Shot"},
+
+    
+
 
     //The Redeemed Team
     {name: "Jin Bae", PPG: 13, teamName: "The Redeemed Team"},
     {name: "Pastor Charles", PPG: 6, teamName: "The Redeemed Team"},
     {name: "Jay Choi", PPG: 6, teamName: "The Redeemed Team"},
+    {name: "James Lee", PPG: 6, teamName: "The Redeemed Team"},
+    {name: "Aaron Kim", PPG: 6, teamName: "The Redeemed Team"},
+
+
 
     //Ohana 
     {name: "Tim Jao", PPG: 6, teamName: "Ohana"},
     {name: "Chris Lee", PPG: 6, teamName: "Ohana"},
+    {name: "Person Lee", PPG: 6, teamName: "Ohana"},
+    {name: "Chris Lee", PPG: 6, teamName: "Ohana"},
+    {name: "Chris Lee", PPG: 6, teamName: "Ohana"},
+    {name: "Chris Lee", PPG: 6, teamName: "Ohana"},
+
 
     //Triple Threats
     {name: "Joon Jang", PPG: 6, teamName: "Triple Threat"},
@@ -74,6 +94,8 @@ export const RosterSection = () => {
                 Season 11<span className="text-primary"> Players</span>
             </h2>
 
+            {/* Team Names */}
+
             <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {teams.map((team, key) => (
                     <button 
@@ -88,9 +110,11 @@ export const RosterSection = () => {
                 ))}
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* List of players */}
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-auto h-100">
                 {filteredPlayers.map((team, key) => (
-                    <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover">
+                    <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover h-30  ">
                         <div className="text-left mb-4">
                             <h3 className="font-semibold text-lg">
                                 {team.name}
