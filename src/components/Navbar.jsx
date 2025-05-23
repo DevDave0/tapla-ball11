@@ -6,9 +6,9 @@ import { Menu, X } from "lucide-react";
 const navItems = [
     {name: "Home", href: "#hero"},
     {name: "Overview", href: "#about"},
+    {name: "Teams & Players", href: "#roster"},
     {name: "Stats", href: "#stats"},
     {name: "Schedule", href: "#schedule"},
-    {name: "Roster", href: "#roster"},
 ]
 
 export const Navbar = () => {
