@@ -112,7 +112,7 @@ export const RosterSection = () => {
 
             {/* List of players */}
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-auto h-100">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-auto h-180">
                 {filteredPlayers.map((team, key) => (
                     <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover h-30  ">
                         <div className="text-left mb-4">

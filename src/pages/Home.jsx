@@ -5,6 +5,7 @@ import { HeroSection } from "../components/HeroSection"
 import { Schedule } from "../components/Schedule"
 import { AboutSection } from "../components/AboutSection"
 import { RosterSection } from "../components/RosterSection"
+import { Stats } from "../components/Stats"
 
 export const Home = () => {
     return <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -20,6 +21,7 @@ export const Home = () => {
             <HeroSection />
             <AboutSection />
             <RosterSection />
+            <Stats />
             <Schedule />
         </main>
 
