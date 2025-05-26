@@ -68,7 +68,7 @@ const roster = [
 ];
 
 const teams = [
-    "all",
+    "Top 30",
     "Born Again Ballers",
     "DINKs",
     "Holy Shot",
@@ -83,9 +83,15 @@ const teams = [
 
 export const RosterSection = () => {
 
-    const [activeTeam, setActiveTeam] = useState("all");
+    const [activeTeam, setActiveTeam] = useState("Top 30");
 
-    const filteredPlayers = roster.filter((team) => activeTeam === "all" || team.teamName === activeTeam);
+    const top30 = roster
+        .sort((a, b) => b.PPG - a.PPG) // 🔽 Sort descending by PPG
+        .slice(0, 30);   
+
+    const filteredPlayers = top30.filter(
+        (player) => activeTeam === "Top 30" || player.teamName === activeTeam
+    );
 
     return (
     <section id="roster" className="py-24 px-4 relative bg-secondary/30">
@@ -112,23 +118,26 @@ export const RosterSection = () => {
 
             {/* List of players */}
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 overflow-auto h-180">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
                 {filteredPlayers.map((team, key) => (
-                    <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover h-30  ">
-                        <div className="text-left mb-4">
-                            <h3 className="font-semibold text-lg">
-                                {team.name}
-                            </h3>
-                        </div>
+                    <div className="relative group">
+                        <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 tilt"></div>
+                        <div key={key} className="relative bg-card p-6 rounded-lg shadow-xs card-hover h-30  ">
+                            <div className="text-left mb-4">
+                                <h3 className="font-semibold text-lg">
+                                    {team.name}
+                                </h3>
+                            </div>
 
-                        <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                            <div 
-                                className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]" 
-                                style={{width: team.PPG + "vh"}}/>
-                        </div>
+                            <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
+                                <div 
+                                    className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]" 
+                                    style={{width: team.PPG + "vh"}}/>
+                            </div>
 
-                        <div className="text-right mt-1">
-                            <span className="text-sm text-muted-foreground">{team.PPG} PPG</span>
+                            <div className="text-right mt-1">
+                                <span className="text-sm text-muted-foreground">{team.PPG} PPG</span>
+                            </div>
                         </div>
                     </div>
                 ))}
