@@ -143,7 +143,6 @@ export const Stats = () =>{
                 </div>
 
                 {/* tables */}
-                {console.log(isDarkMode)}
                 {activeCategory === "teams" ? (
                     <div className="grid gap-6 " style={{ height: 400 }}>
                         <AgGridReact
