@@ -6,7 +6,6 @@ import { ThemeToggle } from "./ThemeToggle"; // Adjust the path if needed
 
 
 const navItems = [
-    {name: "Home", href: "#hero"},
     {name: "Overview", href: "#about"},
     {name: "Teams & Players", href: "#roster"},
     {name: "Stats", href: "#stats"},

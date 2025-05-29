@@ -44,7 +44,6 @@ export const Schedule = () => {
     const [showGameStats, setShowGameStats] = useState(false);
     const [selectedGame, setSelectedGame] = useState(null);
 
-
     const filteredGames = games.filter(
         (game) => game.week === activeWeek
     );
@@ -56,71 +55,68 @@ export const Schedule = () => {
                     <span className="text-primary">Schedule</span>
                 </h2>
 
-                {/* weeks */}
-                <div className="flex flex-wrap justify-center gap-4 mb-12">
-                    {weeks.map((week, key) => (
-                        <button 
-                            key={key} 
-                            className={cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                            activeWeek === week ? "bg-primary text-primary-foreground" : "bg-secondary/70 text-foreground hover:bg-secondary"
-                            )}
-                            onClick={() => setActiveWeek(week)}
-                        >
-                            {week}
-                        </button>
-                    ))}
-                </div>
-
-                {/* games */}
-
                 {showGameStats ? (
-                    <GameStats  game={selectedGame}/>
-                ) : (
-                    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6 ">
-                    {filteredGames.map((game, key) => (
-                        // show 
-                        <div className="relative group">
-                            <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 tilt"></div>
-                            <div key={key} className="relative bg-card p-6 rounded-lg shadow-xs card-hover h-auto  ">
-                                <div className="text-center">{game.week}</div>
-                                <div className="text-center">{game.time} {game.date}</div>
-                                <div className="text-center font-bold mb-8">Court {game.court}</div>
+                    <GameStats  setShowGameStats={setShowGameStats} game={selectedGame}/>
+                    
+                ): (
+                    <>
+                        {/* weeks */}
+                        <div className="flex flex-wrap justify-center gap-4 mb-12">
+                            {weeks.map((week, key) => (
+                                <button 
+                                    key={key} 
+                                    className={cn("px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+                                    activeWeek === week ? "bg-primary text-primary-foreground" : "bg-secondary/70 text-foreground hover:bg-secondary"
+                                    )}
+                                    onClick={() => setActiveWeek(week)}
+                                >
+                                    {week}
+                                </button>
+                            ))}
+                        </div>
 
-                                <div className="flex justify-between items-center mb-12">
-                                    {/* Home team (left half) */}
-                                    <div className="w-1/2 flex flex-col justify-center items-center h-full">
-                                        <h3 className="font-semibold lg:text-2xl mb-8">{game.homeTeamName}</h3>
-                                        <p className="text-muted-foreground lg:text-xl">{game.homeTeamScore}</p>
-                                    </div>
+                        {/* games */}
+                        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6 ">
+                            {filteredGames.map((game, key) => (
+                                // show 
+                                <div className="relative group">
+                                    <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 tilt"></div>
+                                    <div key={key} className="relative bg-card p-6 rounded-lg shadow-xs card-hover h-auto  ">
+                                        <div className="text-center">{game.week}</div>
+                                        <div className="text-center">{game.time} {game.date}</div>
+                                        <div className="text-center font-bold mb-8">Court {game.court}</div>
 
-                                    {/* Away team (right half) */}
-                                    <div className="w-1/2 flex flex-col justify-center items-center h-full">
-                                        <h3 className="font-semibold lg:text-2xl mb-8">{game.awayTeamName}</h3>
-                                        <p className="text-muted-foreground lg:text-xl">{game.awayTeamScore}</p>
+                                        <div className="flex justify-between items-center mb-12">
+                                            {/* Home team (left half) */}
+                                            <div className="w-1/2 flex flex-col justify-center items-center h-full">
+                                                <h3 className="font-semibold lg:text-2xl mb-8">{game.homeTeamName}</h3>
+                                                <p className="text-muted-foreground lg:text-xl">{game.homeTeamScore}</p>
+                                            </div>
+
+                                            {/* Away team (right half) */}
+                                            <div className="w-1/2 flex flex-col justify-center items-center h-full">
+                                                <h3 className="font-semibold lg:text-2xl mb-8">{game.awayTeamName}</h3>
+                                                <p className="text-muted-foreground lg:text-xl">{game.awayTeamScore}</p>
+                                            </div>
+                                        </div>
+
+                                        <button
+                                            className={cn("cosmic-button",
+                                            )}
+                                            onClick={() => {
+                                                setSelectedGame(game);
+                                                setShowGameStats(true);
+                                            }}
+                                        >
+                                            Game Stats
+                                        </button>
+                                        
                                     </div>
                                 </div>
-
-                                <button
-                                    className={cn("cosmic-button",
-                                    )}
-                                    onClick={() => {
-                                        setSelectedGame(game);
-                                        setShowGameStats(true);
-                                    }}
-                                >
-                                    Game Stats
-                                </button>
-                                
-                            </div>
+                            ))}
                         </div>
-                    ))}
-                </div>
+                    </>
                 )}
-
-                
-
-
-                
             </div>
         </section>
     )
