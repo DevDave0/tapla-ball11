@@ -61,8 +61,8 @@ const roster = [
     {name: "Max Lee", PPG: 6, teamName: "DINKs"},
 
     //Justin & DK
-    {name: "Justin Son", PPG: 6, teamName: "Justin & DK"},
-    {name: "Daniel Kim", PPG: 6, teamName: "Justin & DK"},
+    {name: "Justin Son", PPG: 6, teamName: "Overrated"},
+    {name: "Daniel Kim", PPG: 6, teamName: "Overrated"},
 
 
 ];
@@ -73,7 +73,7 @@ const teams = [
     "DINKs",
     "Holy Shot",
     "ILB Academy",
-    "Justin & DK",
+    "Overrated",
     "Ohana",
     "Short King of Kings",
     "Triple Threat",

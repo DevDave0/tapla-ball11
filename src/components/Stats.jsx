@@ -58,7 +58,7 @@ export const Stats = () =>{
         {teamName: "YHWH Elite", gamesPlayed: 7, wins: 5, losses: 2, pointsPerGame: 12, pointsAllowedPerGame: 50, pointDifferential: 10},
         {teamName: "The Redeemed Team", gamesPlayed: 7, wins: 7, losses: 0, pointsPerGame: 7, pointsAllowedPerGame: 55, pointDifferential: 10},
         {teamName: "Ohana", gamesPlayed: 7, wins: 7, losses: 0, pointsPerGame: 50, pointsAllowedPerGame: 22, pointDifferential: 10},
-        {teamName: "Justin & DK", gamesPlayed: 7, wins: 7, losses: 0, pointsPerGame: 40, pointsAllowedPerGame: 27, pointDifferential: 10},
+        {teamName: "Overrated", gamesPlayed: 7, wins: 7, losses: 0, pointsPerGame: 40, pointsAllowedPerGame: 27, pointDifferential: 10},
         {teamName: "Born Again Ballers", gamesPlayed: 7, wins: 7, losses: 0, pointsPerGame: 23, pointsAllowedPerGame: 21, pointDifferential: 10},
         {teamName: "Triple Threats", gamesPlayed: 7, wins: 7, losses: 0, pointsPerGame: 25, pointsAllowedPerGame: 20 , pointDifferential: 10},
     ]);
@@ -98,27 +98,27 @@ export const Stats = () =>{
 
 // Column Definitions
     const [colDef ] = useState([
-        {field: "teamName", pinned: "left", width: 173, headerClass: 'header-center'},
-        {field: "gamesPlayed", headerClass: 'header-center'},
-        {field: "wins", headerClass: 'header-center'},
-        {field: "losses", headerClass: 'header-center'},
-        {field: "pointsPerGame", headerClass: 'header-center'},
+        {field: "teamName", pinned: "left", width: 125, headerClass: 'header-center'},
+        {field: "gamesPlayed", width: 125, headerClass: 'header-center'},
+        {field: "wins", width: 90, headerClass: 'header-center'},
+        {field: "losses", width: 90, headerClass: 'header-center'},
+        {field: "pointsPerGame", headerName: "PPG", width: 120, headerClass: 'header-center'},
         {field: "pointsAllowedPerGame", headerClass: 'header-center'},
         {field: "pointDifferential", headerClass: 'header-center'},
     ]);
 
 // Player Column Definitions
     const [playerColDef ] = useState([
-        {field: "playerName", headerName: "Player Name", filter: true, pinned: "left", width: 173, headerClass: 'header-center'},
-        {field: "teamName", headerName: "Team Name", headerClass: 'header-center'}, 
-        {field: "gamesPlayed", headerName: "Games Played", headerClass: 'header-center'},
-        {field: "points", headerName: "Points", headerClass: 'header-center'},
-        {field: "twoPtMade", headerName: "2PT Made", headerClass: 'header-center'},
-        {field: "twoPtAtt", headerName: "2PT Attempted", headerClass: 'header-center'},
-        {field: "threePtMade", headerName: "3PT Made", headerClass: 'header-center'},
-        {field: "threePtAtt", headerName: "3PT Attempted", headerClass: 'header-center'},
-        {field: "ftMade", headerName: "FT Made", headerClass: 'header-center'},
-        {field: "ftAtt", headerName: "FT Attempted", headerClass: 'header-center'},
+        {field: "playerName", headerName: "Player", filter: true, pinned: "left", width: 125, headerClass: 'header-center'},
+        {field: "teamName", width: 125, headerName: "Team Name", headerClass: 'header-center'}, 
+        {field: "gamesPlayed", width: 90, headerName: "GP", headerClass: 'header-center'},
+        {field: "points", width: 90, headerName: "Points", headerClass: 'header-center'},
+        {field: "twoPtMade", width: 90, headerName: "2PM", headerClass: 'header-center'},
+        {field: "twoPtAtt", width: 90, headerName: "2PA", headerClass: 'header-center'},
+        {field: "threePtMade", width: 90, headerName: "3PM", headerClass: 'header-center'},
+        {field: "threePtAtt", width: 90, headerName: "3PA", headerClass: 'header-center'},
+        {field: "ftMade", width: 90, headerName: "FTM", headerClass: 'header-center'},
+        {field: "ftAtt", width: 90, headerName: "FTA", headerClass: 'header-center'},
     ]);
 
     return (
