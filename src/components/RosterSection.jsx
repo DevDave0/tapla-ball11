@@ -4,67 +4,124 @@ import { cn } from "../lib/utils";
 
 const roster = [
     //Holy Shot
-    {name: "David Chung", PPG: 2, teamName: "Holy Shot"},
-    {name: "James Lee", PPG: 6, teamName: "Holy Shot"},
-    {name: "Person Kim", PPG: 12, teamName: "Holy Shot"},
-    {name: "Person Kim", PPG: 7, teamName: "Holy Shot"},
-    {name: "Person Kim", PPG: 20, teamName: "Holy Shot"},
-    {name: "Person Kim", PPG: 1, teamName: "Holy Shot"},
-    {name: "Person Kim", PPG: 2, teamName: "Holy Shot"},
-    {name: "Person Kim", PPG: 3, teamName: "Holy Shot"},
-    {name: "Person Kim", PPG: 0, teamName: "Holy Shot"},
-    {name: "Person Kim", PPG: 9, teamName: "Holy Shot"},
-
-    
-
+    {name: "David Chung", PPG: 0, teamName: "Holy Shot"},
+    {name: "James Lee", PPG: 0, teamName: "Holy Shot"},
+    {name: "Paul Kim", PPG: 0, teamName: "Holy Shot"},
+    {name: "Alex Lee", PPG: 0, teamName: "Holy Shot"},
+    {name: "Caleb Choi", PPG: 0, teamName: "Holy Shot"},
+    {name: "Joshua Park", PPG: 0, teamName: "Holy Shot"},
+    {name: "Jonathan Ai", PPG: 0, teamName: "Holy Shot"},
+    {name: "Brian Shin", PPG: 0, teamName: "Holy Shot"},
+    {name: "Justin Kyung", PPG: 0, teamName: "Holy Shot"},
+    {name: "Aaron Lee", PPG: 0, teamName: "Holy Shot"},
 
     //The Redeemed Team
-    {name: "Jin Bae", PPG: 13, teamName: "The Redeemed Team"},
-    {name: "Pastor Charles", PPG: 6, teamName: "The Redeemed Team"},
-    {name: "Jay Choi", PPG: 6, teamName: "The Redeemed Team"},
-    {name: "James Lee", PPG: 6, teamName: "The Redeemed Team"},
-    {name: "Aaron Kim", PPG: 6, teamName: "The Redeemed Team"},
-
-
+    {name: "Jin Bae", PPG: 0, teamName: "The Redeemed Team"},
+    {name: "Pastor Charles", PPG: 0, teamName: "The Redeemed Team"},
+    {name: "Jay Choi", PPG: 0, teamName: "The Redeemed Team"},
+    {name: "Michael Shon", PPG: 0, teamName: "The Redeemed Team"},
+    {name: "Benjamin K Lee", PPG: 0, teamName: "The Redeemed Team"},
+    {name: "Gene Yi", PPG: 0, teamName: "The Redeemed Team"},
+    {name: "James Lee", PPG: 0, teamName: "The Redeemed Team"},
+    {name: "Joe Lee", PPG: 0, teamName: "The Redeemed Team"},
+    {name: "Peter Bae", PPG: 0, teamName: "The Redeemed Team"},
+    {name: "Aaron Kim", PPG: 0, teamName: "The Redeemed Team"},
 
     //Ohana 
-    {name: "Tim Jao", PPG: 6, teamName: "Ohana"},
-    {name: "Chris Lee", PPG: 6, teamName: "Ohana"},
-    {name: "Person Lee", PPG: 6, teamName: "Ohana"},
-    {name: "Chris Lee", PPG: 6, teamName: "Ohana"},
-    {name: "Chris Lee", PPG: 6, teamName: "Ohana"},
-    {name: "Chris Lee", PPG: 6, teamName: "Ohana"},
-
+    {name: "Tim Jao", PPG: 0, teamName: "Ohana"},
+    {name: "Chris Lee", PPG: 0, teamName: "Ohana"},
+    {name: "Chris Youn", PPG: 0, teamName: "Ohana"},
+    {name: "Justin Chung", PPG: 0, teamName: "Ohana"},
+    {name: "Timothy Chuman", PPG: 0, teamName: "Ohana"},
+    {name: "Christian Clark", PPG: 0, teamName: "Ohana"},
+    {name: "Kevin Ra", PPG: 0, teamName: "Ohana"},
+    {name: "Michael Ruan", PPG: 0, teamName: "Ohana"},
+    {name: "Sam Kim", PPG: 0, teamName: "Ohana"},
+    {name: "Katie Wong", PPG: 0, teamName: "Ohana"},
 
     //Triple Threats
-    {name: "Joon Jang", PPG: 6, teamName: "Triple Threat"},
-    {name: "Jinwon", PPG: 6, teamName: "Triple Threat"},
+    {name: "Joon Jang", PPG: 0, teamName: "Triple Threat"},
+    {name: "Richard Yoon", PPG: 0, teamName: "Triple Threat"},
+    {name: "Aaron Kim", PPG: 0, teamName: "Triple Threat"},
+    {name: "Daniel Yoon", PPG: 0, teamName: "Triple Threat"},
+    {name: "Eric Ko", PPG: 0, teamName: "Triple Threat"},
+    {name: "Jin Park", PPG: 0, teamName: "Triple Threat"},
+    {name: "Anthony Kim", PPG: 0, teamName: "Triple Threat"},
+    {name: "Nathan Suh", PPG: 0, teamName: "Triple Threat"},
+    {name: "Joshua Park", PPG: 0, teamName: "Triple Threat"},
+    {name: "Angeline Quach", PPG: 0, teamName: "Triple Threat"},
 
     //Born Again Ballers
-    {name: "Mo", PPG: 6, teamName: "Born Again Ballers"},
-    {name: "Jon Shen", PPG: 6, teamName: "Born Again Ballers"},
+    {name: "Jonathan Mo", PPG: 0, teamName: "Born Again Ballers"},
+    {name: "Jon Shen", PPG: 0, teamName: "Born Again Ballers"},
+    {name: "Ethan Chien", PPG: 0, teamName: "Born Again Ballers"},
+    {name: "Joshua Yoon", PPG: 0, teamName: "Born Again Ballers"},
+    {name: "Daniel Weon", PPG: 0, teamName: "Born Again Ballers"},
+    {name: "Enoch Chung", PPG: 0, teamName: "Born Again Ballers"},
+    {name: "Brian Kim", PPG: 0, teamName: "Born Again Ballers"},
+    {name: "Joseph Choi", PPG: 0, teamName: "Born Again Ballers"},
+    {name: "Paul Ko", PPG: 0, teamName: "Born Again Ballers"},
+    {name: "Peter Yu", PPG: 0, teamName: "Born Again Ballers"},
 
     //YHWH Elite
-    {name: "Josh Chung", PPG: 6, teamName: "YHWH Elite"},
-    {name: "Daniel Choi", PPG: 6, teamName: "YHWH Elite"},
+    {name: "Daniel Choi", PPG: 0, teamName: "YHWH Elite"},
+    {name: "Joshua Chung", PPG: 0, teamName: "YHWH Elite"},
+    {name: "Stephen Min", PPG: 0, teamName: "YHWH Elite"},
+    {name: "Dylan Wong", PPG: 0, teamName: "YHWH Elite"},
+    {name: "Corrie Wong", PPG: 0, teamName: "YHWH Elite"},
+    {name: "Jonathan Lee", PPG: 0, teamName: "YHWH Elite"},
+    {name: "Joshua Chuang", PPG: 0, teamName: "YHWH Elite"},
+    {name: "Aaron Woo", PPG: 0, teamName: "YHWH Elite"},
+    {name: "Josh Jeung", PPG: 0, teamName: "YHWH Elite"},
+    {name: "Noah Choe", PPG: 0, teamName: "YHWH Elite"},
 
     //ILB Academy
-    {name: "Jeremiah Su", PPG: 21.2, teamName: "ILB Academy"},
-    {name: "Rylan Morio", PPG: 6, teamName: "ILB Academy"},
+    {name: "Jeremiah Su", PPG: 0, teamName: "ILB Academy"},
+    {name: "Rylan Morio", PPG: 0, teamName: "ILB Academy"},
+    {name: "Austin Lin", PPG: 0, teamName: "ILB Academy"},
+    {name: "Caleb Yoon", PPG: 0, teamName: "ILB Academy"},
+    {name: "Evan Yang", PPG: 0, teamName: "ILB Academy"},
+    {name: "Brayden Chen", PPG: 0, teamName: "ILB Academy"},
+    {name: "Jeremy Kim", PPG: 0, teamName: "ILB Academy"},
+    {name: "Noah Somphone", PPG: 0, teamName: "ILB Academy"},
+    {name: "Ryan Lee", PPG: 0, teamName: "ILB Academy"},
+    {name: "Sharon Lee", PPG: 0, teamName: "ILB Academy"},
 
     //Short King of Kings
-    {name: "Alex Chi", PPG: 6, teamName: "Short King of Kings"},
-    {name: "Doulos Kun", PPG: 6, teamName: "Short King of Kings"},
+    {name: "Alex Chi", PPG: 0, teamName: "Short King of Kings"},
+    {name: "Doulos Kun", PPG: 0, teamName: "Short King of Kings"},
+    {name: "Jun Kim", PPG: 0, teamName: "Short King of Kings"},
+    {name: "Jonathan Lin", PPG: 0, teamName: "Short King of Kings"},
+    {name: "Joshua Park", PPG: 0, teamName: "Short King of Kings"},
+    {name: "Edward Jung", PPG: 0, teamName: "Short King of Kings"},
+    {name: "Stuart Mar", PPG: 0, teamName: "Short King of Kings"},
+    {name: "Tae Kim", PPG: 0, teamName: "Short King of Kings"},
+    {name: "Timothy Chong", PPG: 0, teamName: "Short King of Kings"},
+    {name: "Ryan Gueon", PPG: 0, teamName: "Short King of Kings"},
 
     //DINKs
-    {name: "Jay Won Choi", PPG: 6, teamName: "DINKs"},
-    {name: "Max Lee", PPG: 6, teamName: "DINKs"},
+    {name: "Jay Won Choi", PPG: 0, teamName: "DINKs"},
+    {name: "Max Lee", PPG: 0, teamName: "DINKs"},
+    {name: "Tim Ahn", PPG: 0, teamName: "DINKs"},
+    {name: "Jeffrey Zhu", PPG: 0, teamName: "DINKs"},
+    {name: "Josh Kong", PPG: 0, teamName: "DINKs"},
+    {name: "Aaron Lu", PPG: 0, teamName: "DINKs"},
+    {name: "Christian Li", PPG: 0, teamName: "DINKs"},
+    {name: "Robin Choi", PPG: 0, teamName: "DINKs"},
+    {name: "Stephen Haw", PPG: 0, teamName: "DINKs"},
+    {name: "Timothy Chiu", PPG: 0, teamName: "DINKs"},
 
     //Justin & DK
-    {name: "Justin Son", PPG: 6, teamName: "Overrated"},
-    {name: "Daniel Kim", PPG: 6, teamName: "Overrated"},
-
-
+    {name: "Justin Son", PPG: 0, teamName: "Overrated"},
+    {name: "Daniel Kim", PPG: 0, teamName: "Overrated"},
+    {name: "Nate Lee", PPG: 0, teamName: "Overrated"},
+    {name: "Timothy Yu", PPG: 0, teamName: "Overrated"},
+    {name: "Ivan Huang", PPG: 0, teamName: "Overrated"},
+    {name: "Curtis Ahn", PPG: 0, teamName: "Overrated"},
+    {name: "Joe Song", PPG: 0, teamName: "Overrated"},
+    {name: "Juhyeong Mun", PPG: 0, teamName: "Overrated"},
+    {name: "Matthew Li", PPG: 0, teamName: "Overrated"},
+    {name: "Junho Kim", PPG: 0, teamName: "Overrated"}
 ];
 
 const teams = [
@@ -85,13 +142,13 @@ export const RosterSection = () => {
 
     const [activeTeam, setActiveTeam] = useState("Top 30");
 
-    const top30 = roster
-        .sort((a, b) => b.PPG - a.PPG) // 🔽 Sort descending by PPG
-        .slice(0, 30);   
-
-    const filteredPlayers = top30.filter(
+    const filteredPlayers = roster.filter(
         (player) => activeTeam === "Top 30" || player.teamName === activeTeam
     );
+
+    const top30 = filteredPlayers
+        .sort((a, b) => b.PPG - a.PPG) // 🔽 Sort descending by PPG
+        .slice(0, 30);   
 
     return (
     <section id="roster" className="py-24 px-4 relative bg-secondary/30">
@@ -119,7 +176,7 @@ export const RosterSection = () => {
             {/* List of players */}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
-                {filteredPlayers.map((team, key) => (
+                {top30.map((team, key) => (
                     <div className="relative group">
                         <div className="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-0 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 tilt"></div>
                         <div key={key} className="relative bg-card p-6 rounded-lg shadow-xs card-hover h-30  ">

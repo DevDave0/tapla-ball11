@@ -39,16 +39,11 @@ export const GameStats = ({game, setShowGameStats}) => {
 
     const [isDarkMode, setIsDarkMode] = useState("");
 
+
+    // Will need to import game stats from backend and then have two separate teamRowData.
+    
     const [teamRowData ] = useState([
-        {playerName: "David Chung", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
-        {playerName: "David Chung", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
-        {playerName: "David Chung", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
-        {playerName: "David Chung", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
-        {playerName: "David Chung", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
-        {playerName: "David Chung", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
-        {playerName: "David Chung", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
-        {playerName: "David Chung", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
-        {playerName: "David Chung", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
+        {playerName: "placeholder", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
         {playerName: "Total", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
 
     ]);

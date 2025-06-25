@@ -21,20 +21,57 @@ const weeks = [
 // example game structure {week: 1, time: "3:30", date: 7/7/25, court: 1, teamName: "Holy Shot", score: 50}
 
 const games = [
-    {week: "Week 1", time: "3:30", date: "7/7/25", court: 1, homeTeamName: "Holy Shot", homeTeamScore: 50, awayTeamName: "The Redeemed Team", awayTeamScore: 35 },
-    {week: "Week 1", time: "3:30", date: "7/7/25", court: 2, homeTeamName: "DINKs", homeTeamScore: 50, awayTeamName: "The Short King of Kings", awayTeamScore: 35 },
-    {week: "Week 1", time: "4:30", date: "7/7/25", court: 1, homeTeamName: "Ohana", homeTeamScore: 50, awayTeamName: "Triple Threats", awayTeamScore: 35},
-    {week: "Week 1", time: "4:30", date: "7/7/25", court: 2, homeTeamName: "ILB Academy", homeTeamScore: 50, awayTeamName: "YHWH Elite", awayTeamScore: 35},
-
-    {week: "Week 2", time: "3:30", date: "7/7/25", court: 1, homeTeamName: "Holy Shot", homeTeamScore: 50, awayTeamName: "The Redeemed Team", awayTeamScore: 35 },
-    {week: "Week 2", time: "3:30", date: "7/7/25", court: 2, homeTeamName: "DINKs", homeTeamScore: 50, awayTeamName: "The Short King of Kings", awayTeamScore: 35 },
-    {week: "Week 2", time: "4:30", date: "7/7/25", court: 1, homeTeamName: "Ohana", homeTeamScore: 50, awayTeamName: "Triple Threats", awayTeamScore: 35},
-    {week: "Week 2", time: "4:30", date: "7/7/25", court: 2, homeTeamName: "ILB Academy", homeTeamScore: 50, awayTeamName: "YHWH Elite", awayTeamScore: 35},
-
-    {week: "Week 3", time: "3:30", date: "7/7/25", court: 1, homeTeamName: "Holy Shot", homeTeamScore: 50, awayTeamName: "The Redeemed Team", awayTeamScore: 35 },
-    {week: "Week 3", time: "3:30", date: "7/7/25", court: 2, homeTeamName: "DINKs", homeTeamScore: 50, awayTeamName: "The Short King of Kings", awayTeamScore: 35 },
-    {week: "Week 3", time: "4:30", date: "7/7/25", court: 1, homeTeamName: "Ohana", homeTeamScore: 50, awayTeamName: "Triple Threats", awayTeamScore: 35},
-    {week: "Week 3", time: "4:30", date: "7/7/25", court: 2, homeTeamName: "ILB Academy", homeTeamScore: 50, awayTeamName: "YHWH Elite", awayTeamScore: 35},
+    // week 1
+    {week: "Week 1", time: "3:30", date: "6/29/25", court: 1, homeTeamName: "Short King of Kings", homeTeamScore: 0, awayTeamName: "Born Again Ballers", awayTeamScore: 0 },
+    {week: "Week 1", time: "3:30", date: "6/29/25", court: 2, homeTeamName: "Ohana", homeTeamScore: 0, awayTeamName: "Holy Shot", awayTeamScore: 0 },
+    {week: "Week 1", time: "4:30", date: "6/29/25", court: 1, homeTeamName: "Triple Threats", homeTeamScore: 0, awayTeamName: "Overrated", awayTeamScore: 0},
+    // week 2
+    {week: "Week 2", time: "3:30", date: "7/6/25", court: 1, homeTeamName: "Triple Threats", homeTeamScore: 0, awayTeamName: "DINKs", awayTeamScore: 0 },
+    {week: "Week 2", time: "3:30", date: "7/6/25", court: 2, homeTeamName: "Overrated", homeTeamScore: 0, awayTeamName: "YHWH Elite", awayTeamScore: 0 },
+    {week: "Week 2", time: "4:30", date: "7/6/25", court: 1, homeTeamName: "The Redeemed Team", homeTeamScore: 0, awayTeamName: "ILB Academy", awayTeamScore: 0},
+    // week 3
+    {week: "Week 3", time: "3:30", date: "7/13/25", court: 1, homeTeamName: "Short King of Kings", homeTeamScore: 0, awayTeamName: "ILB Academy", awayTeamScore: 0 },
+    {week: "Week 3", time: "3:30", date: "7/13/25", court: 2, homeTeamName: "Born Again Ballers", homeTeamScore: 0, awayTeamName: "YHWH Elite", awayTeamScore: 0 },
+    {week: "Week 3", time: "4:30", date: "7/13/25", court: 1, homeTeamName: "Holy Shot", homeTeamScore: 0, awayTeamName: "DINKs", awayTeamScore: 0},
+    {week: "Week 3", time: "4:30", date: "7/13/25", court: 2, homeTeamName: "Ohana", homeTeamScore: 0, awayTeamName: "The Redeemed Team", awayTeamScore: 0},
+    // week 4
+    {week: "Week 4", time: "3:30", date: "7/20/25", court: 1, homeTeamName: "Short King of Kings", homeTeamScore: 0, awayTeamName: "Holy Shot", awayTeamScore: 0 },
+    {week: "Week 4", time: "3:30", date: "7/20/25", court: 2, homeTeamName: "Ohana", homeTeamScore: 0, awayTeamName: "Overrated", awayTeamScore: 0 },
+    {week: "Week 4", time: "4:30", date: "7/20/25", court: 1, homeTeamName: "Born Again Ballers", homeTeamScore: 0, awayTeamName: "ILB Academy", awayTeamScore: 0},
+    {week: "Week 4", time: "4:30", date: "7/20/25", court: 2, homeTeamName: "Triple Threats", homeTeamScore: 0, awayTeamName: "YHWH Elite", awayTeamScore: 0},
+    // week 5
+    {week: "Week 5", time: "3:30", date: "7/27/25", court: 1, homeTeamName: "Short King of Kings", homeTeamScore: 0, awayTeamName: "DINKs", awayTeamScore: 0 },
+    {week: "Week 5", time: "3:30", date: "7/27/25", court: 2, homeTeamName: "Born Again Ballers", homeTeamScore: 0, awayTeamName: "Ohana", awayTeamScore: 0 },
+    {week: "Week 5", time: "4:30", date: "7/27/25", court: 1, homeTeamName: "Holy Shot", homeTeamScore: 0, awayTeamName: "Triple Threats", awayTeamScore: 0},
+    {week: "Week 5", time: "4:30", date: "7/27/25", court: 2, homeTeamName: "The Redeemed Team", homeTeamScore: 0, awayTeamName: "Overrated", awayTeamScore: 0},
+    // week 6
+    {week: "Week 6", time: "3:30", date: "8/3/25", court: 1, homeTeamName: "The Redeemed Team", homeTeamScore: 0, awayTeamName: "DINKs", awayTeamScore: 0 },
+    {week: "Week 6", time: "3:30", date: "8/3/25", court: 2, homeTeamName: "Short King of Kings", homeTeamScore: 0, awayTeamName: "Ohana", awayTeamScore: 0 },
+    {week: "Week 6", time: "4:30", date: "8/3/25", court: 1, homeTeamName: "YHWH Elite", homeTeamScore: 0, awayTeamName: "ILB Academy", awayTeamScore: 0},
+    {week: "Week 6", time: "4:30", date: "8/3/25", court: 2, homeTeamName: "Born Again Ballers", homeTeamScore: 0, awayTeamName: "Holy Shot", awayTeamScore: 0},
+    // week 7
+    {week: "Week 7", time: "3:30", date: "8/10/25", court: 1, homeTeamName: "The Redeemed Team", homeTeamScore: 0, awayTeamName: "YHWH Elite", awayTeamScore: 0 },
+    {week: "Week 7", time: "3:30", date: "8/10/25", court: 2, homeTeamName: "Born Again Ballers", homeTeamScore: 0, awayTeamName: "Overrated", awayTeamScore: 0 },
+    {week: "Week 7", time: "4:30", date: "8/10/25", court: 1, homeTeamName: "Short King of Kings", homeTeamScore: 0, awayTeamName: "Triple Threats", awayTeamScore: 0},
+    {week: "Week 7", time: "4:30", date: "8/10/25", court: 2, homeTeamName: "DINKs", homeTeamScore: 0, awayTeamName: "ILB Academy", awayTeamScore: 0},
+    // week 8
+    {week: "Week 8", time: "3:30", date: "8/17/25", court: 1, homeTeamName: "The Redeemed Team", homeTeamScore: 0, awayTeamName: "Holy Shot ", awayTeamScore: 0 },
+    {week: "Week 8", time: "3:30", date: "8/17/25", court: 2, homeTeamName: "DINKs", homeTeamScore: 0, awayTeamName: "YHWH Elite", awayTeamScore: 0 },
+    {week: "Week 8", time: "4:30", date: "8/17/25", court: 1, homeTeamName: "Ohana", homeTeamScore: 0, awayTeamName: "Triple Threats", awayTeamScore: 0},
+    {week: "Week 8", time: "4:30", date: "8/17/25", court: 2, homeTeamName: "ILB Academy", homeTeamScore: 0, awayTeamName: "Overrated", awayTeamScore: 0},
+    // week 9
+    {week: "Week 9", time: "3:30", date: "9/7/25", court: 1, homeTeamName: "7th Seed", homeTeamScore: 0, awayTeamName: "8th Seed", awayTeamScore: 0 },
+    {week: "Week 9", time: "3:30", date: "9/7/25", court: 2, homeTeamName: "9th Seed", homeTeamScore: 0, awayTeamName: "10th Seed", awayTeamScore: 0 },
+    {week: "Week 9", time: "4:30", date: "9/7/25", court: 1, homeTeamName: "L1", homeTeamScore: 0, awayTeamName: "W2", awayTeamScore: 0},
+    // week 10
+    {week: "Week 10", time: "3:30", date: "9/14/25", court: 1, homeTeamName: "1st Seed", homeTeamScore: 0, awayTeamName: "8th Seed", awayTeamScore: 0 },
+    {week: "Week 10", time: "3:30", date: "9/14/25", court: 2, homeTeamName: "2nd Seed", homeTeamScore: 0, awayTeamName: "7th Seed", awayTeamScore: 0 },
+    {week: "Week 10", time: "4:30", date: "9/14/25", court: 1, homeTeamName: "3rd Seed", homeTeamScore: 0, awayTeamName: "6th Seed", awayTeamScore: 0},
+    {week: "Week 10", time: "4:30", date: "9/14/25", court: 2, homeTeamName: "4th Seed", homeTeamScore: 0, awayTeamName: "5th Seed", awayTeamScore: 0},
+        // week 11
+    {week: "Week 11", time: "3:30", date: "9/21/25", court: 1, homeTeamName: "W G4", homeTeamScore: 0, awayTeamName: "W G7", awayTeamScore: 0 },
+    {week: "Week 11", time: "3:30", date: "9/21/25", court: 2, homeTeamName: "W G5", homeTeamScore: 0, awayTeamName: "W G6", awayTeamScore: 0 },
+    {week: "Week 11", time: "4:30", date: "9/21/25", court: 1, homeTeamName: "W G8", homeTeamScore: 0, awayTeamName: "W G9", awayTeamScore: 0},
 ];
 
 
@@ -89,12 +126,14 @@ export const Schedule = () => {
                                         <div className="flex justify-between items-center mb-12">
                                             {/* Home team (left half) */}
                                             <div className="w-1/2 flex flex-col justify-center items-center h-full">
+                                            <p className="text-muted-foreground lg:text-l p-1">Home Team - White</p>
                                                 <h3 className="font-semibold lg:text-2xl mb-8">{game.homeTeamName}</h3>
                                                 <p className="text-muted-foreground lg:text-xl">{game.homeTeamScore}</p>
                                             </div>
 
                                             {/* Away team (right half) */}
                                             <div className="w-1/2 flex flex-col justify-center items-center h-full">
+                                                <p className="text-muted-foreground lg:text-l p-1">Away Team - Dark</p>
                                                 <h3 className="font-semibold lg:text-2xl mb-8">{game.awayTeamName}</h3>
                                                 <p className="text-muted-foreground lg:text-xl">{game.awayTeamScore}</p>
                                             </div>
