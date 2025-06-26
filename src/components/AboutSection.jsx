@@ -13,7 +13,7 @@ export const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <p className="text-muted-foreground">
-                            We've had a lot of great fellowship and exercise through the years and want to continue to build a stronger community within this church body by using basketball to glorify Him! This year, all proceeds will contribute to fundraising for medical missions teams to the Middle East and Guatemala! Thank you so much for partnering with us to send our church to be the salt and light! 
+                            We've had a lot of great fellowship and exercise through the years and want to continue to build a stronger community within this church body by using basketball to glorify Him! This year, all proceeds will contribute to fundraising for this year's STM! Thank you so much for partnering with us to send our church to be the salt and light! 
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
