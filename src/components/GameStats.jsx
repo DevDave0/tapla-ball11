@@ -43,8 +43,8 @@ export const GameStats = ({game, setShowGameStats}) => {
     // Will need to import game stats from backend and then have two separate teamRowData.
     
     const [teamRowData ] = useState([
-        {playerName: "placeholder", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
-        {playerName: "Total", FG: 7, FGPer: 7, ThreePt: 0, ThreePtPer: 35, FT: 20, FTPer: 10, PF: 5, PTS: 25},
+        {playerName: "placeholder", FG: 0, FGPer: 0, ThreePt: 0, ThreePtPer: 0, FT: 0, FTPer: 0, PF: 0, PTS: 0},
+        {playerName: "Total", FG: 0, FGPer: 0, ThreePt: 0, ThreePtPer: 0, FT: 0, FTPer: 0, PF: 0, PTS: 0},
 
     ]);
     
