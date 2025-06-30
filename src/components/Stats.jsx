@@ -150,16 +150,16 @@ export const Stats = () =>{
     {playerName: "Sharon Lee", teamName: "ILB Academy", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
 
     // Short King of Kings
-    {playerName: "Alex Chi", teamName: "Short King of Kings", gamesPlayed: 1, points: 3, twoPtMade: 1, twoPtAtt: 5, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Doulos Kun", teamName: "Short King of Kings", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Jun Kim", teamName: "Short King of Kings", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Jonathan Lin", teamName: "Short King of Kings", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Joshua Park", teamName: "Short King of Kings", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Alex Chi", teamName: "Short King of Kings", gamesPlayed: 1, points: 3, twoPtMade: 1, twoPtAtt: 5, threePtMade: 0, threePtAtt: 0, FGPer: 50, ftMade: 1, ftAtt: 2, FTPer: 50},
+    {playerName: "Doulos Kun", teamName: "Short King of Kings", gamesPlayed: 1, points: 11, twoPtMade: 1, twoPtAtt: 2, threePtMade: 3, threePtAtt: 4, FGPer: 66.7, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Jun Kim", teamName: "Short King of Kings", gamesPlayed: 1, points: 12, twoPtMade: 4, twoPtAtt: 10, threePtMade: 1, threePtAtt: 3, FGPer: 38.5, ftMade: 1, ftAtt: 2, FTPer: 50},
+    {playerName: "Jonathan Lin", teamName: "Short King of Kings", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 1, threePtMade: 0, threePtAtt: 3, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Joshua Park", teamName: "Short King of Kings", gamesPlayed: 1, points: 9, twoPtMade: 3, twoPtAtt: 6, threePtMade: 1, threePtAtt: 6, FGPer: 33.3, ftMade: 0, ftAtt: 1, FTPer: 0},
     {playerName: "Edward Jung", teamName: "Short King of Kings", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Stuart Mar", teamName: "Short King of Kings", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Tae Kim", teamName: "Short King of Kings", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Timothy Chong", teamName: "Short King of Kings", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Ryan Gueon", teamName: "Short King of Kings", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Stuart Mar", teamName: "Short King of Kings", gamesPlayed: 0, points: 0   , twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Tae Kim", teamName: "Short King of Kings", gamesPlayed: 1, points: 9, twoPtMade: 3, twoPtAtt: 3, threePtMade: 1, threePtAtt: 2, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Timothy Chong", teamName: "Short King of Kings", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 2, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Ryan Gueon", teamName: "Short King of Kings", gamesPlayed: 1, points: 4, twoPtMade: 2, twoPtAtt: 8, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
 
     // DINKs
     {playerName: "Jay Won Choi", teamName: "DINKs", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
