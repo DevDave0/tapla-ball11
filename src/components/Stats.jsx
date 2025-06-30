@@ -116,15 +116,15 @@ export const Stats = () =>{
 
     // Born Again Ballers
     {playerName: "Jonathan Mo", teamName: "Born Again Ballers", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Jon Shen", teamName: "Born Again Ballers", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Ethan Chien", teamName: "Born Again Ballers", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Joshua Yoon", teamName: "Born Again Ballers", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Daniel Weon", teamName: "Born Again Ballers", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Enoch Chung", teamName: "Born Again Ballers", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Jon Shen", teamName: "Born Again Ballers", gamesPlayed: 1, points: 8, twoPtMade: 1, twoPtAtt: 6, threePtMade: 2, threePtAtt: 8, FGPer: 21.4, ftMade: 0, ftAtt: 1, FTPer: 0},
+    {playerName: "Ethan Chien", teamName: "Born Again Ballers", gamesPlayed: 1, points: 5, twoPtMade: 3, twoPtAtt: 1, threePtMade: 6, threePtAtt: 0, FGPer: 11.1, ftMade: 2, ftAtt: 2, FTPer: 100},
+    {playerName: "Joshua Yoon", teamName: "Born Again Ballers", gamesPlayed: 1, points: 3, twoPtMade: 0, twoPtAtt: 1, threePtMade: 1, threePtAtt: 3, FGPer: 25, ftMade: 0, ftAtt: 2, FTPer: 0},
+    {playerName: "Daniel Weon", teamName: "Born Again Ballers", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 2, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Enoch Chung", teamName: "Born Again Ballers", gamesPlayed: 1, points: 2, twoPtMade: 1, twoPtAtt: 1, threePtMade: 0, threePtAtt: 1, FGPer: 50, ftMade: 0, ftAtt: 2, FTPer: 0},
     {playerName: "Brian Kim", teamName: "Born Again Ballers", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Joseph Choi", teamName: "Born Again Ballers", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Paul Ko", teamName: "Born Again Ballers", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Peter Yu", teamName: "Born Again Ballers", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Joseph Choi", teamName: "Born Again Ballers", gamesPlayed: 1, points: 2, twoPtMade: 1, twoPtAtt: 2, threePtMade: 0, threePtAtt: 0, FGPer: 50, ftMade: 0, ftAtt: 4, FTPer: 0},
+    {playerName: "Paul Ko", teamName: "Born Again Ballers", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 3, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Peter Yu", teamName: "Born Again Ballers", gamesPlayed: 1, points: 2, twoPtMade: 1, twoPtAtt: 3, threePtMade: 0, threePtAtt: 0, FGPer: 33.3, ftMade: 0, ftAtt: 0, FTPer: 0},
 
     // YHWH Elite
     {playerName: "Daniel Choi", teamName: "YHWH Elite", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
