@@ -68,14 +68,14 @@ export const Stats = () =>{
 
     const [playerRowData] = useState([
         {playerName: "David Chung", teamName: "Holy Shot", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "James Lee", teamName: "Holy Shot", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "James Lee", teamName: "Holy Shot", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 2, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Paul Kim", teamName: "Holy Shot", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Alex Lee", teamName: "Holy Shot", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Caleb Choi", teamName: "Holy Shot", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Joshua Park", teamName: "Holy Shot", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Jonathan Ai", teamName: "Holy Shot", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Brian Shin", teamName: "Holy Shot", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Justin Kyung", teamName: "Holy Shot", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Alex Lee", teamName: "Holy Shot", gamesPlayed: 1, points: 6, twoPtMade: 3, twoPtAtt: 4, threePtMade: 0, threePtAtt: 2, FGPer: 50, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Caleb Choi", teamName: "Holy Shot", gamesPlayed: 1, points: 6, twoPtMade: 0, twoPtAtt: 1, threePtMade: 2, threePtAtt: 3, FGPer: 50, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Joshua Park", teamName: "Holy Shot", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 1, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Jonathan Ai", teamName: "Holy Shot", gamesPlayed: 1, points: 5, twoPtMade: 1, twoPtAtt: 3, threePtMade: 1, threePtAtt: 1, FGPer: 50, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Brian Shin", teamName: "Holy Shot", gamesPlayed: 1, points: 2, twoPtMade: 1, twoPtAtt: 2, threePtMade: 0, threePtAtt: 1, FGPer: 33.3, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Justin Kyung", teamName: "Holy Shot", gamesPlayed: 1, points: 13, twoPtMade: 5, twoPtAtt: 11, threePtMade: 1, threePtAtt: 1, FGPer: 50, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Aaron Lee", teamName: "Holy Shot", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
 
     // The Redeemed Team
