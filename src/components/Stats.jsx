@@ -103,16 +103,16 @@ export const Stats = () =>{
     {playerName: "Katie Wong", teamName: "Ohana", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 4, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
 
     // Triple Threat
-    {playerName: "Joon Jang", teamName: "Triple Threat", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Richard Yoon", teamName: "Triple Threat", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Aaron Kim", teamName: "Triple Threat", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Daniel Yoon", teamName: "Triple Threat", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Eric Ko", teamName: "Triple Threat", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Joon Jang", teamName: "Triple Threat", gamesPlayed: 1, points: 6, twoPtMade: 1, twoPtAtt: 1, threePtMade: 1, threePtAtt: 2, FGPer: 66.7, ftMade: 1, ftAtt: 4, FTPer: 25},
+    {playerName: "Richard Yoon", teamName: "Triple Threat", gamesPlayed: 1, points: 9, twoPtMade: 3, twoPtAtt: 3, threePtMade: 1, threePtAtt: 3, FGPer: 66.7, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Aaron Kim", teamName: "Triple Threat", gamesPlayed: 1, points: 11, twoPtMade: 0, twoPtAtt: 1, threePtMade: 3, threePtAtt: 8, FGPer: 33.3, ftMade: 2, ftAtt: 2, FTPer: 100},
+    {playerName: "Daniel Yoon", teamName: "Triple Threat", gamesPlayed: 1, points: 10, twoPtMade: 1, twoPtAtt: 5, threePtMade: 2, threePtAtt: 6, FGPer: 27.3, ftMade: 2, ftAtt: 2, FTPer: 100},
+    {playerName: "Eric Ko", teamName: "Triple Threat", gamesPlayed: 1, points: 6, twoPtMade: 1, twoPtAtt: 4, threePtMade: 1, threePtAtt: 2, FGPer: 33.3, ftMade: 1, ftAtt: 2, FTPer: 50},
     {playerName: "Jin Park", teamName: "Triple Threat", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Anthony Kim", teamName: "Triple Threat", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Nathan Suh", teamName: "Triple Threat", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Joshua Park", teamName: "Triple Threat", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Angeline Quach", teamName: "Triple Threat", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Anthony Kim", teamName: "Triple Threat", gamesPlayed: 1, points: 2, twoPtMade: 1, twoPtAtt: 1, threePtMade: 0, threePtAtt: 2, FGPer: 33.3, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Nathan Suh", teamName: "Triple Threat", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 3, threePtMade: 0, threePtAtt: 1, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Joshua Park", teamName: "Triple Threat", gamesPlayed: 1, points: 2, twoPtMade: 1, twoPtAtt: 2, threePtMade: 0, threePtAtt: 0, FGPer: 50, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Angeline Quach", teamName: "Triple Threat", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 1, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
 
     // Born Again Ballers
     {playerName: "Jonathan Mo", teamName: "Born Again Ballers", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
