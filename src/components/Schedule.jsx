@@ -22,9 +22,9 @@ const weeks = [
 
 const games = [
     // week 1
-    {week: "Week 1", time: "3:30", date: "6/29/25", court: 1, homeTeamName: "Short King of Kings", homeTeamScore: 0, awayTeamName: "Born Again Ballers", awayTeamScore: 0 },
-    {week: "Week 1", time: "3:30", date: "6/29/25", court: 2, homeTeamName: "Ohana", homeTeamScore: 0, awayTeamName: "Holy Shot", awayTeamScore: 0 },
-    {week: "Week 1", time: "4:30", date: "6/29/25", court: 1, homeTeamName: "Triple Threats", homeTeamScore: 0, awayTeamName: "Overrated", awayTeamScore: 0},
+    {week: "Week 1", time: "3:30", date: "6/29/25", court: 1, homeTeamName: "Short King of Kings", homeTeamScore: 48, awayTeamName: "Born Again Ballers", awayTeamScore: 22 },
+    {week: "Week 1", time: "3:30", date: "6/29/25", court: 2, homeTeamName: "Ohana", homeTeamScore: 54, awayTeamName: "Holy Shot", awayTeamScore: 32 },
+    {week: "Week 1", time: "4:30", date: "6/29/25", court: 1, homeTeamName: "Triple Threats", homeTeamScore: 46, awayTeamName: "Overrated", awayTeamScore: 35},
     // week 2
     {week: "Week 2", time: "3:30", date: "7/6/25", court: 1, homeTeamName: "Triple Threats", homeTeamScore: 0, awayTeamName: "DINKs", awayTeamScore: 0 },
     {week: "Week 2", time: "3:30", date: "7/6/25", court: 2, homeTeamName: "Overrated", homeTeamScore: 0, awayTeamName: "YHWH Elite", awayTeamScore: 0 },
