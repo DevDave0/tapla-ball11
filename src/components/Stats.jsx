@@ -174,16 +174,16 @@ export const Stats = () =>{
     {playerName: "Timothy Chiu", teamName: "DINKs", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
 
     // Overrated
-    {playerName: "Justin Son", teamName: "Overrated", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Daniel Kim", teamName: "Overrated", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Nate Lee", teamName: "Overrated", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Justin Son", teamName: "Overrated", gamesPlayed: 1, points: 16, twoPtMade: 2, twoPtAtt: 6, threePtMade: 3, threePtAtt: 10, FGPer: 31.3, ftMade: 3, ftAtt: 4, FTPer: 75},
+    {playerName: "Daniel Kim", teamName: "Overrated", gamesPlayed: 1, points: 9, twoPtMade: 3, twoPtAtt: 7, threePtMade: 1, threePtAtt: 7, FGPer: 28.6, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Nate Lee", teamName: "Overrated", gamesPlayed: 1, points: 5, twoPtMade: 1, twoPtAtt: 5, threePtMade: 1, threePtAtt: 4, FGPer: 22.2, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Timothy Yu", teamName: "Overrated", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Ivan Huang", teamName: "Overrated", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Curtis Ahn", teamName: "Overrated", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Joe Song", teamName: "Overrated", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Joe Song", teamName: "Overrated", gamesPlayed: 1, points: 2, twoPtMade: 1, twoPtAtt: 4, threePtMade: 0, threePtAtt: 1, FGPer: 20, ftMade: 0, ftAtt: 2, FTPer: 0},
     {playerName: "Juhyeong Mun", teamName: "Overrated", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Matthew Li", teamName: "Overrated", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-    {playerName: "Junho Kim", teamName: "Overrated", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0}
+    {playerName: "Matthew Li", teamName: "Overrated", gamesPlayed: 1, points: 3, twoPtMade: 0, twoPtAtt: 0, threePtMade: 1, threePtAtt: 4, FGPer: 25, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Junho Kim", teamName: "Overrated", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 1, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0}
     ])
 
     
