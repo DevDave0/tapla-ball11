@@ -162,7 +162,7 @@ export const Stats = () =>{
     {playerName: "Ryan Gueon", teamName: "Short King of Kings", gamesPlayed: 1, points: 4, twoPtMade: 2, twoPtAtt: 8, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
 
     // DINKs
-    {playerName: "Jay Won Choi", teamName: "DINKs", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    {playerName: "Jay Won", teamName: "DINKs", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Max Lee", teamName: "DINKs", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Tim Ahn", teamName: "DINKs", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Jeffrey Zhu", teamName: "DINKs", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},

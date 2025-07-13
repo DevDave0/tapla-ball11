@@ -100,7 +100,7 @@ const roster = [
     {name: "Ryan Gueon", PPG: 4, teamName: "Short King of Kings"},
 
     //DINKs
-    {name: "Jay Won Choi", PPG: 0, teamName: "DINKs"},
+    {name: "Jay Won", PPG: 0, teamName: "DINKs"},
     {name: "Max Lee", PPG: 0, teamName: "DINKs"},
     {name: "Tim Ahn", PPG: 0, teamName: "DINKs"},
     {name: "Jeffrey Zhu", PPG: 0, teamName: "DINKs"},

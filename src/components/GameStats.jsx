@@ -18,7 +18,7 @@ ModuleRegistry.registerModules([
     // add more modules here as needed
 ]);
 
-export const GameStats = ({game, setShowGameStats}) => {
+export const GameStats = ({game, setShowGameStats, homeTeamData, awayTeamData}) => {
 
     useEffect(() => {
             const updateTheme = () => {
@@ -42,25 +42,42 @@ export const GameStats = ({game, setShowGameStats}) => {
 
     // Will need to import game stats from backend and then have two separate teamRowData.
     
-    const [teamRowData ] = useState([
-        {playerName: "placeholder", FG: 0, FGPer: 0, ThreePt: 0, ThreePtPer: 0, FT: 0, FTPer: 0, PF: 0, PTS: 0},
-        {playerName: "Total", FG: 0, FGPer: 0, ThreePt: 0, ThreePtPer: 0, FT: 0, FTPer: 0, PF: 0, PTS: 0},
+    // const [teamRowData ] = useState([
+    //     {playerName: "placeholder", FG: 0, FGPer: 0, ThreePt: 0, ThreePtPer: 0, FT: 0, FTPer: 0, PF: 0, PTS: 0},
+    //     {playerName: "Total", FG: 0, FGPer: 0, ThreePt: 0, ThreePtPer: 0, FT: 0, FTPer: 0, PF: 0, PTS: 0},
 
-    ]);
+    // ]);
     
-    const [colDef ] = useState([
-        {field: "playerName", pinned: "left", width: 173, headerClass: 'header-center'},
-        {field: "FG", width: 105, headerClass: 'header-center'},
-        {field: "FGPer", width: 90, headerName: 'FG%', headerClass: 'header-center'},
-        {field: "ThreePt", width: 105, headerName: '3P', headerClass: 'header-center'},
-        {field: "ThreePtPer", width: 90, headerName: '3P%', headerClass: 'header-center'},
-        {field: "FT", width: 105, headerClass: 'header-center'},
-        {field: "FTPer", width: 90, headerName: 'FT%', headerClass: 'header-center'},
-        {field: "PF", width: 90, headerClass: 'header-center'},
-        {field: "PTS", width: 105, headerClass: 'header-center'},
-        {field: "Total", width: 105, headerClass: 'header-center'},
+    const percentFormatter = params =>
+  params.value === null || params.value === undefined
+    ? ''                       // show blank when no value
+    : `${params.value}%`;      // append the symbol
 
-    ]);
+const [colDef] = useState([
+  { field: "playerName", pinned: "left", width: 173, headerClass: 'header-center' },
+
+  { field: "PTS",        width: 105, headerClass: 'header-center' },
+
+  { field: "twoPtMade",  width: 90,  headerName: "2PM", headerClass: 'header-center' },
+  { field: "twoPtAtt",   width: 90,  headerName: "2PA", headerClass: 'header-center' },
+  { field: "TwoPtPer",   width: 90,  headerName: "2P%", headerClass: 'header-center',
+    valueFormatter: percentFormatter },
+
+  { field: "threePtMade", width: 90, headerName: "3PM", headerClass: 'header-center' },
+  { field: "threePtAtt",  width: 90, headerName: "3PA", headerClass: 'header-center' },
+  { field: "ThreePtPer",  width: 90, headerName: "3P%", headerClass: 'header-center',
+    valueFormatter: percentFormatter },
+
+  { field: "FG",     width: 105, headerClass: 'header-center' },
+  { field: "FGPer",  width: 90,  headerName: "FG%", headerClass: 'header-center',
+    valueFormatter: percentFormatter },
+
+  { field: "FT",     width: 105, headerClass: 'header-center' },
+  { field: "FTPer",  width: 90,  headerName: "FT%", headerClass: 'header-center',
+    valueFormatter: percentFormatter },
+
+  { field: "PF",     width: 90,  headerClass: 'header-center' }
+]);
 
     return (
         <section>
@@ -77,7 +94,7 @@ export const GameStats = ({game, setShowGameStats}) => {
                     key={game.homeTeamName}
                     theme="legacy"
                     className={isDarkMode}
-                    rowData={teamRowData} 
+                    rowData={homeTeamData} 
                     columnDefs={colDef}
                         
                 />
@@ -90,7 +107,7 @@ export const GameStats = ({game, setShowGameStats}) => {
                     key={game.awayTeamName}
                     theme="legacy"
                     className={isDarkMode}
-                    rowData={teamRowData} 
+                    rowData={awayTeamData} 
                     columnDefs={colDef}                    
                 />
             </div>
