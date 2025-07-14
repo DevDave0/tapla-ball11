@@ -51,23 +51,24 @@ export const Stats = () =>{
 
 // Team Row Data, Data to be displayed
     const [teamRowData ] = useState([
-        {teamName: "Holy Shot", gamesPlayed: 1, wins: 0, losses: 1, pointsPerGame: 32, pointsAllowedPerGame: 54, pointDifferential: -22},
-        {teamName: "DINKs", gamesPlayed: 0, wins: 0, losses: 0, pointsPerGame: 0, pointsAllowedPerGame: 0, pointDifferential: 0},
-        {teamName: "Short Kings of Kings", gamesPlayed: 1, wins: 1, losses: 0, pointsPerGame: 48, pointsAllowedPerGame: 22, pointDifferential: 26},
-        {teamName: "ILB Academy", gamesPlayed: 0, wins: 0, losses: 0, pointsPerGame: 0, pointsAllowedPerGame: 0, pointDifferential: 0},
-        {teamName: "YHWH Elite", gamesPlayed: 0, wins: 0, losses: 0, pointsPerGame: 0, pointsAllowedPerGame: 0, pointDifferential: 0},
-        {teamName: "The Redeemed Team", gamesPlayed: 0, wins: 0, losses: 0, pointsPerGame: 0, pointsAllowedPerGame: 0, pointDifferential: 0},
-        {teamName: "Ohana", gamesPlayed: 1, wins: 1, losses: 0, pointsPerGame: 54, pointsAllowedPerGame: 32, pointDifferential: 22},
-        {teamName: "Overrated", gamesPlayed: 1, wins: 0, losses: 1, pointsPerGame: 35, pointsAllowedPerGame: 46, pointDifferential: -11},
-        {teamName: "Born Again Ballers", gamesPlayed: 1, wins: 0, losses: 1, pointsPerGame: 22, pointsAllowedPerGame: 48, pointDifferential: -26},
-        {teamName: "Triple Threats", gamesPlayed: 1, wins: 1, losses: 0, pointsPerGame: 46, pointsAllowedPerGame: 35, pointDifferential: 11},
-    ]);
+    { teamName: "Short King of Kings", gamesPlayed: 2, wins: 2, losses: 0, pointsPerGame: 48.5, pointsAllowedPerGame: 28.5, pointDifferential: 40 },
+    { teamName: "Born Again Ballers", gamesPlayed: 2, wins: 0, losses: 2, pointsPerGame: 26.5, pointsAllowedPerGame: 52.5, pointDifferential: -52 },
+    { teamName: "Ohana", gamesPlayed: 2, wins: 2, losses: 0, pointsPerGame: 49.5, pointsAllowedPerGame: 33.0, pointDifferential: 33 },
+    { teamName: "Holy Shot", gamesPlayed: 2, wins: 0, losses: 2, pointsPerGame: 33.0, pointsAllowedPerGame: 48.5, pointDifferential: -31 },
+    { teamName: "Triple Threats", gamesPlayed: 2, wins: 1, losses: 1, pointsPerGame: 42.5, pointsAllowedPerGame: 48.0, pointDifferential: -11 },
+    { teamName: "Overrated", gamesPlayed: 2, wins: 0, losses: 2, pointsPerGame: 42.0, pointsAllowedPerGame: 55.5, pointDifferential: -27 },
+    { teamName: "DINKs", gamesPlayed: 2, wins: 2, losses: 0, pointsPerGame: 52.0, pointsAllowedPerGame: 36.5, pointDifferential: 31 },
+    { teamName: "YHWH Elite", gamesPlayed: 2, wins: 2, losses: 0, pointsPerGame: 61.0, pointsAllowedPerGame: 40.0, pointDifferential: 42 },
+    { teamName: "The Redeemed Team", gamesPlayed: 2, wins: 1, losses: 1, pointsPerGame: 45.5, pointsAllowedPerGame: 48.5, pointDifferential: -6 },
+    { teamName: "ILB Academy", gamesPlayed: 2, wins: 0, losses: 2, pointsPerGame: 43.5, pointsAllowedPerGame: 53.0, pointDifferential: -19 }
+]);
 
 // Individual Row Data to be displayed
 // player data to be imported from back end
 
     const [playerRowData] = useState([
-        {playerName: "David Chung", teamName: "Holy Shot", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
+    // Holy Shot
+    {playerName: "David Chung", teamName: "Holy Shot", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "James Lee", teamName: "Holy Shot", gamesPlayed: 1, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 2, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Paul Kim", teamName: "Holy Shot", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Alex Lee", teamName: "Holy Shot", gamesPlayed: 1, points: 6, twoPtMade: 3, twoPtAtt: 4, threePtMade: 0, threePtAtt: 2, FGPer: 50, ftMade: 0, ftAtt: 0, FTPer: 0},
@@ -137,7 +138,8 @@ export const Stats = () =>{
     {playerName: "Aaron Woo", teamName: "YHWH Elite", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Josh Jeung", teamName: "YHWH Elite", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Noah Choe", teamName: "YHWH Elite", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
-
+    
+    // ILB Academy
      {playerName: "Jeremiah Su", teamName: "ILB Academy", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Rylan Morio", teamName: "ILB Academy", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
     {playerName: "Austin Lin", teamName: "ILB Academy", gamesPlayed: 0, points: 0, twoPtMade: 0, twoPtAtt: 0, threePtMade: 0, threePtAtt: 0, FGPer: 0, ftMade: 0, ftAtt: 0, FTPer: 0},
@@ -191,28 +193,28 @@ export const Stats = () =>{
 // Column Definitions
     const [colDef ] = useState([
         {field: "teamName", pinned: "left", width: 125, headerClass: 'header-center'},
-        {field: "gamesPlayed", width: 125, headerClass: 'header-center'},
         {field: "wins", width: 90, headerClass: 'header-center'},
         {field: "losses", width: 90, headerClass: 'header-center'},
         {field: "pointsPerGame", headerName: "PPG", width: 120, headerClass: 'header-center'},
         {field: "pointsAllowedPerGame", headerClass: 'header-center'},
         {field: "pointDifferential", headerClass: 'header-center'},
+        {field: "gamesPlayed", width: 125, headerClass: 'header-center'},
     ]);
 
 // Player Column Definitions
     const [playerColDef ] = useState([
         {field: "playerName", headerName: "Player", filter: true, pinned: "left", width: 125, headerClass: 'header-center'},
-        {field: "teamName", width: 125, headerName: "Team Name", headerClass: 'header-center'}, 
-        {field: "gamesPlayed", width: 90, headerName: "GP", headerClass: 'header-center'},
         {field: "points", width: 90, headerName: "Points", headerClass: 'header-center'},
+        {field: "FGPer", width: 90, headerName: "FG%", headerClass: 'header-center'},
         {field: "twoPtMade", width: 90, headerName: "2PM", headerClass: 'header-center'},
         {field: "twoPtAtt", width: 90, headerName: "2PA", headerClass: 'header-center'},
         {field: "threePtMade", width: 90, headerName: "3PM", headerClass: 'header-center'},
         {field: "threePtAtt", width: 90, headerName: "3PA", headerClass: 'header-center'},
-        {field: "FGPer", width: 90, headerName: "FG%", headerClass: 'header-center'},
         {field: "ftMade", width: 90, headerName: "FTM", headerClass: 'header-center'},
         {field: "ftAtt", width: 90, headerName: "FTA", headerClass: 'header-center'},
         {field: "FTPer", width: 90, headerName: "FT%", headerClass: 'header-center'},
+        {field: "gamesPlayed", width: 90, headerName: "GP", headerClass: 'header-center'},
+        {field: "teamName", width: 125, headerName: "Team Name", headerClass: 'header-center'}, 
     ]);
 
     return (
